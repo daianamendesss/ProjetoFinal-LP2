@@ -1,0 +1,14 @@
+@startuml
+abstract class psf.Funcionario
+class java.util.Scanner
+class psf.Consultas
+class psf.Medicos
+class psf.Paciente
+class psf.Psf
+class psf.Receitas
+interface psf.Pessoa
+psf.Medicos --|> psf.Funcionario
+psf.Medicos --|> psf.Pessoa
+psf.Paciente --|> psf.Pessoa
+psf.Psf ..> java.util.Scanner
+@enduml
